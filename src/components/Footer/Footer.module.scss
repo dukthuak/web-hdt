@@ -1,24 +1,28 @@
 @import '../../styles/contants.scss';
 
-.wrapper{
+.wrapper {
     background: white;
-    .container{
+
+    .container {
         gap: 2rem;
+
         @media (max-width: $sm) {
             flex-direction: column;
             gap: 2rem;
             align-items: flex-start;
         }
-        .left{
+
+        .left {
             flex: 3;
-            >*{
+
+            >* {
                 display: block;
             }
-            >:nth-child(2)
-            {
+
+            >:nth-child(2) {
                 margin-top: 3rem;
 
-                a{
+                a {
                     text-decoration: underline;
                     color: orange;
                 }
@@ -26,30 +30,53 @@
         }
 
 
-        .right{
+        .right {
             flex: 1;
-            .info{
+
+            .info {
                 margin-bottom: 1rem;
-                >*{
+
+                >* {
                     display: block;
                 }
             }
-            .menu{
+
+            .menu {
                 @media (max-width: $sm) {
                     flex-direction: row;
                     flex-wrap: wrap;
                 }
+
                 display: flex;
                 flex-direction: column;
                 gap: 2rem;
                 list-style: none;
-                li{
+
+                li {
                     cursor: pointer;
-                    &:hover{
+
+                    &:hover {
                         color: $secondary
                     }
                 }
             }
         }
+    }
+}
+
+
+.footer {
+    @apply py-5 text-lg text-center;
+    background-color: #181818;
+    border-top: 1px solid;
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    color: #6d6d6d;
+    height: 50px;
+    line-height: 50px;
+
+    a {
+        color: #6d6d6d;
     }
 }

@@ -1,7 +1,14 @@
 @import './contants.scss';
 
 .bg-primary {
-  background: #F8F7F1;
+  background: #f5f7dc;
+}
+
+.bg-footer {
+  // background: rgb(2, 0, 36);
+  // background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 9, 0.33657212885154064) 53%, rgba(0, 212, 255, 1) 100%);
+  background: rgb(161, 0, 0);
+  background: linear-gradient(90deg, rgba(161, 0, 0, 1) 0%, rgba(245, 255, 0, 0.3477766106442577) 54%, rgba(0, 212, 255, 1) 100%);
 }
 
 .innerWidth {
@@ -107,6 +114,7 @@
   @media (max-width: $sm) {
     font-size: 2.5rem;
   }
+
   font-size: 3rem;
   font-weight: bold;
 }
@@ -116,10 +124,12 @@
     font-size: 1.1rem;
     line-height: 40px;
   }
+
   line-height: 50px;
   font-size: 1.3rem;
   font-weight: 500
 }
+
 .anchor {
   display: block;
   position: relative;

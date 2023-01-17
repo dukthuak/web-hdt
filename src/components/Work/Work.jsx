@@ -10,7 +10,7 @@ const Work = () => {
     initial="hidden"
     whileInView="show"
     viewport={{ once: false, amount: 0.25 }}
-    className={`paddings ${css.wrapper}`}>
+    className={`bg-primary paddings ${css.wrapper}`}>
     <a className="anchor" id="work"></a>
 
       <div className={`innerWidth flexCenter ${css.container}`}>

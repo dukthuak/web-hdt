@@ -4,7 +4,7 @@ import css from "./Hero.module.scss";
 import { motion } from "framer-motion";
 const Hero = () => {
   return (
-    <section className={`paddings ${css.wrapper}`}>
+    <section className={`bg-primary paddings ${css.wrapper}`}>
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -30,7 +30,7 @@ const Hero = () => {
           variants={fadeIn("up", "tween", 0.3, 1)}
           className={css.person}
         >
-          <motion.img variants={slideIn("up", "tween", 0.5, 1.3)} src="./person.png" alt="" />
+          <motion.img variants={slideIn("up", "tween", 0.5, 1.3)} src="https://cdn.glitch.global/d60d1ab2-93c3-4416-b007-6dd619f82588/banner.png?v=1673935064683" alt="" />
         </motion.div>
 
         <a className={css.email} href="mailto:  hoangducthuan0804@gmail.com">
